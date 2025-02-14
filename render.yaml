@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: employee-scheduler
+    env: python
+    repo: https://github.com/shantoshan2/employee-scheduler
+    branch: main
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    plan: free
